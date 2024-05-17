@@ -1,0 +1,11 @@
+<section>
+    <div class="container">
+        <h3 class="font-mono">Should I deploy today?</h3>
+
+        <h1 hx-trigger="click, keyup[code=='Space'] from:body" hx-get="/again/" hx-swap="innerHTML">
+            <%= message %>
+        </h1>
+
+        <span class="font-mono">Hit <span class="with-border">Space</span> or Click</span>
+    </div>
+</section>
